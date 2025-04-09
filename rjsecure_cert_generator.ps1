@@ -3,7 +3,7 @@ $workingDir = $PSScriptRoot  # Directory where the script is located
 $logFile = Join-Path $workingDir "CertGeneratorLog.txt"
 function Write-Log($message) {
     $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-    # Basic obfuscation; full encryption would need additional setup
+    # Basic obfuscation
     $logMessage = "$timestamp - $message"
     $logMessage | Out-File -FilePath $logFile -Append
 }
