@@ -1,0 +1,11 @@
+[NewRequest]
+Subject = "CN=INSERT DOMAIN NAME HERE"
+Exportable = TRUE
+KeyLength = 2048
+KeySpec = 1
+KeyUsage = 0xA0
+RequestType = Cert
+ProviderName = "Microsoft RSA SChannel Cryptographic Provider"
+
+[EnhancedKeyUsageExtension]
+OID = 1.3.6.1.5.5.7.3.3 ; Code Signing
